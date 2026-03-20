@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lima e Lago - Advogados</title>
+        <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <section>
+        <header id="block-header">
+            <a href="#block-main">
+                <img id="logo" src="img/logo-mc.png">
+            </a>
+            <a id="btn-contato" href="index.html">
+                <p>ENTRE EM CONTATO</p>
+            </a>
+            <img onclick="darkmode()" id="moon" src="img/moon.svg">
+            <svg id="menu" onclick="menu()" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path d="M6 24H42M6 12H42M6 36H42" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </header>
+        <div id="block-menu">
+            <a href="#link-main">Quem somos</a>
+            <a href="#link-areas" id="a-border">Áreas de atuação</a>
+            <a href="#link-fale">Fale conosco</a>
+        </div>
+    </section>
+    <section id="block-main">
+        <div id="back-bronw">
+            <picture>
+                <source media="(max-width: 480px)" srcset="img/fundo-cel.png">
+                <img src="img/fundo-pc.png">
+            </picture>
+        </div>
+        <nav id="main-capa">
+            <p>ADVOCACIA DE EXECELÊNCIA</p>
+            <h1>Onde a lei <br>encontra o cuidado!</h1>
+            <a href="#link-main">
+            <svg xmlns="http://www.w3.org/2000/svg" width="81" height="81" viewBox="0 0 81 81" fill="none">
+                <path d="M23.625 43.875L40.5 60.75L57.375 43.875M23.625 20.25L40.5 37.125L57.375 20.25" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+        </nav>
+    </section>
+    <!-- <div id="link-main"></div>
+    <div id="faixa-top"></div>
+    <div id="back-header"></div>
+    <section id="cont-quem-general">
+        <nav id="cont-quem">
+            <h1>QUEM SOMOS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos consequuntur rerum reiciendis quam nobis amet adipisci laborum, ipsam sit saepe delectus enim optio ducimus veniam! Quos magnam ea alias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, magnam saepe. Numquam, illum accusantium.</p>
+            <nav id="block-lines1">
+                <div class="line-center"></div>
+                <div id="line2"></div>
+            </nav>
+        </nav>
+        <nav id="pictures">
+            <nav id="grid-fotos">
+                <img id="ft-marco" src="img/pict-marco.png">
+                <img id="ft-esther" src="img/pict-esther.png">
+            </nav>
+            <nav id="oab-grid">
+                <nav id="oab1">
+                    <h1>Marco Antônio Lima do Lago</h1>
+                    <p>OAB/MG 226.024</p>
+                </nav>
+                <nav id="oab2">
+                    <h1>Esther de Melo Lago</h1>
+                    <p>OAB/MG 233.253</p>
+                </nav>
+            </nav>
+            <nav id="block-lines2">
+                <div class="line-center"></div>
+                <div id="line4"></div>
+            </nav>
+        </nav>
+        <div id="faixa-bottom"></div>
+    </section>
+    <section id="areas">
+        <div id="link-areas"></div>
+        <div id="block-title">
+            <h1 id="title-areas">ÁREAS DE ATUAÇÃO</h1>
+            <p id="acent-a">´</p>
+            <p id="acent-c">s</p>
+            <p id="acent-ao">~</p>
+        </div>
+        <div id="block-direito-familia">
+            <h1>Direito da família</h1>
+            <ul style="list-style-type: none;" id="grid-fam" >
+                <li>Divórcio e separação</li>
+                <li>Adoção</li>
+                <li>Pensão alimentícia</li>
+                <li>Guarda e visitas</li>
+            </ul>
+            <button onclick="direitoFam()" id="btn-ver1">VER MAIS</button> 
+        </div>    
+        <div id="block-direito-consumi">
+            <h1>Direito do consumidor</h1>
+            <ul style="list-style-type: none;" id="grid-consu" >
+                <li>Cobranças indevidas</li>
+                <li>Claúsulas abusivas</li>
+                <li>Atrasos ou cancelamentos</li>
+                <li>Ações coletivas de consumo</li>
+            </ul>
+            <button onclick="direitoCon()" id="btn-ver2">VER MAIS</button>
+        </div>
+        
+                
+    </section>
+    <dialog id="direitoFam">
+        <h1>Direito da Família</h1>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 17 17" onclick="fechar1()">
+            <g>
+            </g>
+            <path d="M9.207 8.5l6.646 6.646-0.707 0.707-6.646-6.646-6.646 6.646-0.707-0.707 6.646-6.646-6.647-6.646 0.707-0.707 6.647 6.646 6.646-6.646 0.707 0.707-6.646 6.646z"  />
+        </svg>
+        <ul style="list-style-type: none;">
+            <li>Divórcio e separação (judicial ou extrajudicial)</li>
+            <li>Pensão alimentícia (fixação, revisão, exoneração, execução de alimentos)</li>
+            <li>Guarda e visitas (guarda compartilhada, unilateral, regulamentação de convivência)</li>
+            <li>Reconhecimento e dissolução de união estável</li>
+            <li>Adoção</li>
+            <li>Investigação de paternidade e reconhecimento de filiação</li>
+            <li>Regime de bens e partilha de patrimônio</li>
+            <li>Interdição e curatela</li>
+            <li>Planejamento familiar e sucessório (ex: acordos pré-nupciais, testamentos, inventários familiares)</li>
+        </ul>
+    </dialog>
+    <dialog id="direitoCon">
+        <h1>Direito do Consumidor</h1>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 17 17" onclick="fechar()">
+            <g>
+            </g>
+            <path d="M9.207 8.5l6.646 6.646-0.707 0.707-6.646-6.646-6.646 6.646-0.707-0.707 6.646-6.646-6.647-6.646 0.707-0.707 6.647 6.646 6.646-6.646 0.707 0.707-6.646 6.646z"/>
+        </svg>
+        <ul style="list-style-type: none;">
+            <li>Ações contra empresas por defeito de produto ou serviço</li>
+            <li>Cobranças indevidas (ex: valores não contratados, tarifas abusivas)</li>
+            <li>Cláusulas abusivas em contratos de consumo</li>
+            <li>Atrasos ou cancelamentos (ex: passagens aéreas, entregas de produtos)</li>
+            <li>Inscrição indevida em cadastros de inadimplentes (SPC/Serasa)</li>
+            <li>Direitos do consumidor em compras online (arrependimento, trocas, devoluções)</li>
+            <li>Problemas com instituições financeiras (cartões, empréstimos, consignados não autorizados)</li>
+            <li>Ações coletivas de consumo (ex: recalls, vícios em produtos vendidos em massa)</li>
+            <li>Intermediação com órgãos de defesa do consumidor (ex: Procon, Senacon)</li>
+        </ul>
+    </dialog>
+    <section id="block-contact">
+        <div id="link-fale"></div>
+        <h1>FALE CONOSCO</h1>
+        <p>Estamos prontos para ajudar você!</p>
+        <div id="grid-contact">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 120 120" fill="none">
+                <path d="M80.6316 70.4715V76.4715C80.6339 77.0285 80.5198 77.5799 80.2966 78.0902C80.0735 78.6006 79.7462 79.0587 79.3358 79.4353C78.9253 79.8118 78.4407 80.0985 77.9131 80.277C77.3854 80.4554 76.8263 80.5217 76.2716 80.4715C70.1173 79.8028 64.2056 77.6998 59.0116 74.3315C54.1793 71.2609 50.0823 67.1639 47.0116 62.3315C43.6316 57.114 41.5281 51.1735 40.8716 44.9915C40.8216 44.4385 40.8873 43.8811 41.0646 43.3548C41.2418 42.8285 41.5267 42.3449 41.9011 41.9348C42.2755 41.5246 42.7312 41.197 43.2392 40.9726C43.7471 40.7482 44.2963 40.6321 44.8516 40.6315H50.8516C51.8222 40.622 52.7632 40.9657 53.4991 41.5986C54.2351 42.2315 54.7157 43.1104 54.8516 44.0715C55.1048 45.9917 55.5745 47.877 56.2516 49.6915C56.5207 50.4074 56.5789 51.1854 56.4194 51.9333C56.2599 52.6812 55.8893 53.3678 55.3516 53.9115L52.8116 56.4515C55.6587 61.4586 59.8045 65.6044 64.8116 68.4515L67.3516 65.9115C67.8954 65.3738 68.5819 65.0032 69.3298 64.8437C70.0778 64.6842 70.8557 64.7425 71.5716 65.0115C73.3861 65.6886 75.2715 66.1583 77.1916 66.4115C78.1631 66.5486 79.0504 67.038 79.6847 67.7865C80.3189 68.5351 80.6559 69.4907 80.6316 70.4715Z" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M105 57.4999C105.017 64.0992 103.475 70.6093 100.5 76.4999C96.9722 83.5586 91.5488 89.4958 84.8372 93.6463C78.1257 97.7968 70.3912 99.9968 62.5 99.9999C55.9007 100.017 49.3906 98.4752 43.5 95.4999L15 105L24.5 76.4999C21.5247 70.6093 19.9828 64.0992 20 57.4999C20.0031 49.6087 22.2031 41.8742 26.3536 35.1626C30.5041 28.4511 36.4413 23.0277 43.5 19.4999C49.3906 16.5246 55.9007 14.9827 62.5 14.9999H65C75.4217 15.5749 85.2652 19.9737 92.6457 27.3542C100.026 34.7347 104.425 44.5782 105 54.9999V57.4999Z" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p><strong>WhatsApp</strong><br><span onclick="copiar(this)">(31) 9 7105-5301</span></p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 120 120" fill="none">
+                <path d="M110 30C110 24.5 105.5 20 100 20H20C14.5 20 10 24.5 10 30M110 30V90C110 95.5 105.5 100 100 100H20C14.5 100 10 95.5 10 90V30M110 30L60 65L10 30" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p><strong>E-mail</strong><br><span onclick="copiar(this)">limaelagoadvogados@gmail.com</span></p>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 120 120" fill="none">
+                <path d="M105 50C105 85 60 115 60 115C60 115 15 85 15 50C15 38.0653 19.7411 26.6193 28.1802 18.1802C36.6193 9.74106 48.0653 5 60 5C71.9347 5 83.3807 9.74106 91.8198 18.1802C100.259 26.6193 105 38.0653 105 50Z" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M60 65C68.2843 65 75 58.2843 75 50C75 41.7157 68.2843 35 60 35C51.7157 35 45 41.7157 45 50C45 58.2843 51.7157 65 60 65Z" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p><strong>Endereço</strong><br><span onclick="copiar(this)">Rua Contagem, 736, Sala 5, Santa Inês, Belo Horizonte - MG</span></p>
+        </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.8017593076625!2d-43.9062705!3d-19.8905911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69be9f8bc0fdf%3A0x27bb9a83f541c89d!2sLima%20e%20Lago%20Advogados!5e0!3m2!1spt-BR!2sbr!4v1773937787600!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a href="index.html" id="btn-ent-contato">
+            <h2>ENTRAR EM CONTATO AGORA</h2>
+        </a>
+    </section>
+    <section id="block-rodape">
+        <a href="#block-main">
+            <img id="logo2" src="img/logo-mc.png">
+        </a>
+        <span>Onde a lei encontra o cuidado</span>
+        <div id="oab-rod">
+            <p>Marco Antônio Lima do Lago<br>OAB/MG 226.024</p>
+            <p>Esther de Melo Lago<br>OAB/MG 233.253</p>
+        </div>
+        <div id="line-rod"></div>
+        <p>© 2026 Lima e Lago. Todos os direitos reservados.</p>
+    </section>-->
+</body>
+</html>
